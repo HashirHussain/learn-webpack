@@ -10,5 +10,9 @@ module.exports = {
     filename: "myBundle.js",
     path: path.resolve(__dirname, "bundle"),
   },
-  watch: true,
+  devServer: {
+    port: 8080,
+    contentBase: path.resolve(__dirname, "bundle"),
+  },
+  mode: "development",
 };
