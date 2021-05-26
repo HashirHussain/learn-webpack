@@ -1,5 +1,5 @@
-import validator from "validator";
+import { isEmail } from "validator";
 
 import tripleMe from "./tripleMe";
-console.log(validator.isEmail("hashir@hashir.com"));
-console.log(tripleMe(3));
+console.log(isEmail("hashir@hashir.com"));
+console.log(tripleMe(100));
