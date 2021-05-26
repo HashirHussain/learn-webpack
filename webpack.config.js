@@ -13,6 +13,6 @@ module.exports = {
   devServer: {
     port: 8080,
     contentBase: path.resolve(__dirname, "bundle"),
+    hot: true, //instead of full page refresh, inject the changes content directly to the browser.
   },
-  mode: "development",
 };
